@@ -1,15 +1,16 @@
-function userDarkScroll() {
+
+
+// Add custom JavaScript here
+function userScroll() {
     const navbar = document.querySelector('.navbar');
-    
-    window.addEventListener('scroll', () => {
+
+    window.addEventListener('scroll', ()=> {
         if (window.scrollY > 50){
             navbar.classList.add('bg-dark');
-            navbar.classList.add('navbar-sticky');
         } else {
-            navbar.classList.remove('bg-darg');
-            navbar.classList.remove('navbar-sticky');
-        } 
-    });
+            navbar.classList.remove('bg-dark');
+        }
+    })
 }
 
-document.addEventListener('DOMContentLoaded', userDarkScroll);
+document.addEventListener('DOMContentLoaded', userScroll);
